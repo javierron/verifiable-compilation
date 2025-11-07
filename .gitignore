@@ -2,3 +2,6 @@
 target/
 riscv32im*/
 Cargo.lock
+out/receipt.bin
+program.s
+program
