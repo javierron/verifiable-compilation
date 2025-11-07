@@ -16,7 +16,7 @@ use std::fs;
 
 use risc0_binfmt::ProgramBinary;
 use risc0_zkos_v1compat::V1COMPAT_ELF;
-use risc0_zkvm::{compute_image_id, default_prover, ExecutorEnv};
+use risc0_zkvm::{default_prover, ExecutorEnv};
 
 
 fn main() -> anyhow::Result<()> {
