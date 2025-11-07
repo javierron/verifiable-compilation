@@ -1,0 +1,17 @@
+[package]
+name = "c-guest-host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+risc0-zkvm = { path = "../../../risc0/zkvm" }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+risc0-binfmt = { path = "../../../risc0/binfmt", default-features = false }
+risc0-zkos-v1compat = { path = "../../../risc0/zkos/v1compat" }
+bytemuck = "1.15"
+bincode = "1"
+
+[build-dependencies]
+risc0-build = { path = "../../../risc0/build/" }
+rzup = { path = "../../../rzup", default-features = false }
